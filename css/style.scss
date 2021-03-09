@@ -1,6 +1,5 @@
 @import 'bootstrap.css';
 
-
 @mixin background{
   background-color: #FAF4E8;
 }
@@ -89,19 +88,76 @@ header{
     right: 10%;
   }
 }
-.fas fa-birthday-cake{
-  margin-right: 20px;
-}
 section{
   @include background
 }
 .menu{
+  &__head{
+    font-size: 20px;
+    @include main-brown;
+    font-weight: bolder;
+  }
   &__items{
+    list-style: none;
     &__link{
-      color: #FF00FF;
-      border-bottom: 1px #FF00FF solid;
-      i, span{
+      a {
+        box-sizing: content-box;
+        text-decoration: none;
+        color: #FF00FF;
+        font-size: 20px;
+      }
+      &:after{
+        content: "";
         display: inline-block;
+        width: 120%;
+        height: 1px;
+        background-color: #FF00FF;
+      }
+      a{
+      }
+      i{
+        display: inline-block;
+        padding-right: 20px;
+      }
+    }
+  }
+}
+.catalog{
+ h1{
+    @include main-brown;
+    font-size: 24px;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  &__item{
+    &__img{
+      height: 250px;
+      border: #FF00FF 1px solid;
+    }
+    &__name{
+      position: relative;
+      &:before{
+        content: "";
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 40px;
+        background-color: #FF00FF;
+        position: absolute;
+        top: 60px;
+        left: 50%;
+      }
+      &:after{
+        content: "";
+        display: inline-block;
+        width: 100%;
+        background-color: #FF00FF;
+        height: 1px;
+        position: absolute;
+        top: 90px;
+        left: 0;
       }
     }
   }

@@ -67,16 +67,59 @@ header {
     font-size: 2rem;
     right: 10%; }
 
-.fas fa-birthday-cake {
-  margin-right: 20px; }
-
 section {
   background-color: #FAF4E8; }
 
-.menu__items__link {
-  color: #FF00FF;
-  border-bottom: 1px #FF00FF solid; }
-  .menu__items__link i, .menu__items__link span {
-    display: inline-block; }
+.menu__head {
+  font-size: 20px;
+  color: #6B3019;
+  font-weight: bolder; }
+.menu__items {
+  list-style: none; }
+  .menu__items__link a {
+    box-sizing: content-box;
+    text-decoration: none;
+    color: #FF00FF;
+    font-size: 20px; }
+  .menu__items__link:after {
+    content: "";
+    display: inline-block;
+    width: 120%;
+    height: 1px;
+    background-color: #FF00FF; }
+  .menu__items__link i {
+    display: inline-block;
+    padding-right: 20px; }
+
+.catalog h1 {
+  color: #6B3019;
+  font-size: 24px; }
+.catalog a {
+  text-decoration: none;
+  color: black; }
+.catalog__item__img {
+  height: 250px;
+  border: #FF00FF 1px solid; }
+.catalog__item__name {
+  position: relative; }
+  .catalog__item__name:before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 40px;
+    background-color: #FF00FF;
+    position: absolute;
+    top: 60px;
+    left: 50%; }
+  .catalog__item__name:after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    background-color: #FF00FF;
+    height: 1px;
+    position: absolute;
+    top: 90px;
+    left: 0; }
 
 /*# sourceMappingURL=style.css.map */
