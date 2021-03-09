@@ -1,0 +1,82 @@
+@import url(bootstrap.css);
+input {
+  border-width: 0; }
+
+header {
+  background-color: #FAF4E8;
+  border-bottom: 1px solid #6B3019;
+  padding: 1rem 0;
+  position: relative; }
+
+.navbar-dark .navbar-toggler-icon {
+  filter: invert(1); }
+
+.header-nav__search input {
+  background-color: #FAF4E8;
+  position: relative;
+  border: 1px solid #FF00FF;
+  display: inline-block;
+  border-radius: 4px;
+  line-height: 2rem; }
+.header-nav__search button {
+  position: absolute;
+  right: 20px;
+  top: 5px;
+  background: none;
+  border: none;
+  color: #FF00FF; }
+  .header-nav__search button i {
+    font-size: 1rem; }
+
+.header-nav__cart {
+  font-size: 2rem;
+  color: #6B3019; }
+
+.header-nav__callback {
+  color: #6B3019;
+  font-size: 2rem; }
+
+.top-menu {
+  border-bottom: 10px double #6B3019;
+  border-top: 3px solid #6B3019;
+  padding: 2.5px;
+  width: 30px; }
+
+.openTopmenu {
+  display: inline-block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  z-index: 2; }
+  .openTopmenu__inner {
+    background-color: #6B3019;
+    position: relative; }
+    .openTopmenu__inner a {
+      display: block;
+      color: #FAF4E8;
+      font-size: 20px;
+      padding: 1rem 0; }
+    .openTopmenu__inner__soc-icons a {
+      font-size: 2rem;
+      color: #F598CC;
+      padding: 0 1rem; }
+  .openTopmenu .toggle-menu {
+    position: absolute;
+    color: #FAF4E8;
+    font-size: 2rem;
+    right: 10%; }
+
+.fas fa-birthday-cake {
+  margin-right: 20px; }
+
+section {
+  background-color: #FAF4E8; }
+
+.menu__items__link {
+  color: #FF00FF;
+  border-bottom: 1px #FF00FF solid; }
+  .menu__items__link i, .menu__items__link span {
+    display: inline-block; }
+
+/*# sourceMappingURL=style.css.map */
